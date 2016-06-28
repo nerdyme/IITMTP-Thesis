@@ -1,0 +1,151 @@
+
+\chapter{NGO's Web Portal}
+\label{chap:ngoportal}
+Gramvaani Soochna Sanchar is a means for the NGO users and government officials to decentralize the governance by dividing the responsibilities and giving it in the hands of responsible people of society who are a part of it. These are literate, social and reputed people of the society and termed as \emph{Human Access Points} or admin volunteers. Human access points become a \emph{gateway}  with which the NGO personnel and government officials are able to disseminate information in the parts of society in which information circulation is not feasible due to various factors such as illiteracy, infrastucture, internet connectivity, multi-lingual issues and many other problems. NGO personnel and government officials can keep the information in a database of all the human access points at a location which is an easier task to do as compared to keeping the information of all the residents of the community. Through these human access points, NGO personnel can easily get the information of the whole community. Thus, it acts as an \emph{hierarchical architecture} to reach the farthest people of the community. NGO personnel can launch the tasks to the human access points which HAPs can communicate to the local people of the community. These tasks include \emph{Launching a survey}, \emph{Broadcasting an audio announcement} and  \emph{Circulating text message}. The web portal provides the above mentioned functionalities to the NGO personnel and government officials. In addition to this, NGO users and government officials can also view the information of the human access points at a location, active surveys, questions in a survey and responses submitted corresponding to the launched surveys. Web Portal Screenshots can be viewed in figure \ref{fig:Homepage part 1 on the Web Portal}, \ref{fig:Homepage part 2 on the Web Portal}, \ref{fig:Homepage part 3 on the Web Portal}.
+
+\pagebreak
+\section{Technical Specifications}
+
+\begin{itemize}
+
+\item \textbf{Framework : Ruby On Rails}\\
+Ruby on Rails is a web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. The complete framework can be easily setup on system using the following links \cite{Setup43:online} \cite{RVM:R7:online}.
+
+\textbf{Ruby version} : ruby 2.3.0p0 (2015-12-25 revision 53290) [x86\_64-linux] \\
+\textbf{Rails version} : Rails 4.2.6
+
+\item \textbf{Network Library} \\
+\textbf{RestClient} : A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete \cite{GitHu91:online}.\\
+\textbf{Net::HTTP} : A rich library which can be used to build HTTP user-agents. It is designed to work closely with URI::HTTP\#host, URI::HTTP\#port and URI::HTTP\#request\_uri  \cite{Class28:online}.
+
+\item \textbf{Webpages} \\
+The views(can also be termed as webpages) are designed using \\
+\textbf{HTML} (HyperText MarkUp Language). \\
+\textbf{CSS} which is abbreviation for Cascading Style Sheets  is a language used for describing the presentation of a document written in a markup language. \\ 
+\textbf{JavaScript} to add client-side behavior to HTML pages. \\
+\textbf{Bootstrap} is used for setting the structure of the website using its templates, themes and form helpers.
+
+\item \textbf{Database} : MySQL Server \\ 
+\textbf{MySQL version} : mysql  Ver 14.14 Distrib 5.5.49, for debian-linux-gnu (x86\_64)
+\item \textbf{Web Server} :  Puma\\
+Puma is a library that provides a very fast and concurrent HTTP 1.1 server for Ruby web applications. It handles multi threading by running multiple worker threads. The number of the threads running at an instant can be altered as per the load on the system \cite{AMode24:online}.\\
+Puma version : puma version 3.4.0
+
+\item \textbf{Push Notifications} : Google Cloud Messaging (GCM) Server
+\end{itemize}
+
+\section{Web Portal Event Flow}
+Event flow is the flow of every possible functionality on a system. It explains the steps followed to use the system functionalities in an easy manner.
+The complete web portal event flow is described through the flow diagrams figure \ref{fig:Web Portal Flow Diagram 1} and figure \ref{fig:Web Portal Flow Diagram 2}. Interaction of an NGO with the portal is kept simple and easy to use. The user can use the functionalities by clicking the buttons on the webpages which navigates to the further webpages. NGO user can learn about all the functionalities on the portal without login through the thumbnails on the home page which give a brief description beforehand and helps in understanding the functionalities in advance.
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{PortalEventFlow1.png}
+    \caption{ Web Portal Flow Diagram 1}
+    \label{fig:Web Portal Flow Diagram 1}
+\end{figure} 
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=0.4]{PortalEventFlow2.png}
+    \caption{ Web Portal Flow Diagram 2}
+    \label{fig:Web Portal Flow Diagram 2}
+\end{figure} 
+ 
+
+\section{Functionalities}
+
+\subsection{Sign Up}
+A new NGO user can sign up on the system to use it for various functions of the web portal. The form takes the necessary NGO user details and saves it in the database at the back end in the NgoUsers table \ref{fig:erd2}. The details include NGO name, contact number, location of the NGO, website url, email ID for communication, field in which the NGO works and password to login into the account after signup \ref{fig:Register new NGO user on the Web Portal}.
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalSignUp.png}
+    \caption{Sequence diagram of SignUp on Web Portal}
+    \label{fig:Sequence diagram of SignUp on Web Portal}
+\end{figure}
+
+\subsection{Login}
+An NGO user, after signing up into the system can login into the system by filling the registered email ID and password into the login form. The user is authenticated at the backend. If an authenticated user is found with the filled credentials, the user is logged into the system. The session variable is set to the current user at the backend. 
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalLoginData.png}
+    \caption{Sequence diagram of Login on Web Portal}
+    \label{fig:Sequence diagram of Login on Web Portal}
+\end{figure}
+
+The login form can be viewed from figure \ref{fig:Login into the Web Portal}. Home page on the web portal after login can be viewed from figure \ref{fig:Home Page After Login on the Web Portal}
+
+\subsection{Register New Admin}
+After login, an NGO user gets can register new admin volunteer on the web portal. The NGO user can fill the necessary details of the admin volunteer in the form and can register the admin. The details include admin name, contact number, gender, date of birth, location where locations are fetched by the location\_location API provided by Gramvaani. The form data gets saved in the database at the back end in the Users table \ref{fig:erd2}. A row is also generated in the Admins table \ref{fig:erd2} for the user corresponding to the foreign key user\_id which includes pin, GCM registration id of the phone where the android application is going to be installed (for receiving GCM notifications on the phone) and a boolean logged\_in field. The registered admin volunteer then will get a 6-digit pin on the registered contact number through SMS for one time login through the app. Screenshots of register new admin form is in figure \ref{fig:Register new admin step 1 on the web portal} and figure \ref{fig:Register new admin step 2 on the web portal}\\
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDRegisterAdmin.png}
+    \caption{Sequence diagram to Register admin on Web Portal}
+    \label{fig:Sequence diagram to Register admin on Web Portal}
+\end{figure}
+
+\subsection{Launch Survey}
+Logged in NGO user can launch a survey from the web portal to be conducted in the rural areas. When a survey is launched at a location, the residents answer the calls, dialed out from the Gramvaani IVR which record the survey responses submitted by people. The steps for the launching the survey from the portal include selecting a survey from the active surveys displayed on the portal, selecting a location where the survey is to be launched where locations are fetched by the location\_location API provided by Gramvaani, selecting volunteer from the list of admin volunteers at the selected location and submitting to launch the survey. The admin will get a GCM notification on the android application to launch the survey sent to him on his phone. A survey can be launched in 3 steps. The screenshots are in figure \ref{fig:Launch Survey Step 1 on the Web Portal}, figure \ref{fig:Launch Survey Step 2 on the Web Portal} and figure \ref{fig:Launch Survey Step 3 on the Web Portal}\\
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalLaunchSurvey.png}
+    \caption{Sequence diagram to Launch Survey from Web Portal}
+    \label{fig:Sequence diagram to Launch Survey from Web Portal}
+\end{figure}
+
+\subsection{View Active Surveys}
+Multiple app instances are mapped to the user credentials at the backend for getting response from the Gramvaani APIs. Thus, a logged in NGO user can select the app instance for which the active surveys are to be fetched. Details of the active surveys of the selected app instance which are survey name, survey id and form id are displayed at the portal. Questions and responses can also be viewed from the web portal for the selected survey. Screenshot to view active surveys on the web portal \ref{fig:View Surveys on the Web Portal}\\
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalViewSurveys.png}
+    \caption{Sequence diagram to Vew Active Surveys on Web Portal}
+    \label{fig:Sequence diagram to Vew Active Surveys on Web Portal}
+\end{figure}
+\
+\subsection{View Survey Questions}
+Logged in NGO user can view all the questions of the selected survey of an app instance. Question's details include question id, question text, type and other parameters corresponding to a question. The other parameters are choices for a multiple choice type question, duration for a voice response type question and number of digits for quantitative type question. NGO user can also listen to the audio prompts of the questions from the web portal. User can also listen to the audio prompts \ref{fig:Listen Question Audio Prompt on the Web Portal}. Screenshot of the web portal to view questions of a survey \ref{fig:View Survey Questions on the Web Portal}.\\
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalViewQuestions.png}
+    \caption{Sequence diagram to view questions of a survey on Web Portal}
+    \label{fig:Sequence diagram to view questions of a survey on Web Portal}
+\end{figure}
+\subsection{View Survey Responses}
+Logged in NGO user can view all the responses received for a launched survey and can get information statistics of the number of responses received to a question, total number of responses received and total number of residents who answered the survey call made from the Gramvaani IVR. Screenshot of the web portal to view survey responses \ref{fig:View Survey Responses on the Web Portal}\\
+\begin{figure}[H]
+    \centering
+	\includegraphics[width=1\textwidth]{SDPortalViewResponses.png}
+    \caption{Sequence diagram to view survey responses on Web Portal}
+    \label{fig:Sequence diagram to view survey responses on Web Portal}
+\end{figure}
+
+\subsection{Profile}
+Logged in NGO user can view his profile details on the web portal which include NGO Name, contact number, website URL, email ID, field in which the NGO works. Screenshot of the web portal to view user profile \ref{fig:View Logged in User Profile on the Web Portal}.
+
+\subsection{Profile Settings}
+Logged in NGO user can edit his profile details which are email and website url from the portal.
+
+\subsection{Logout}
+Logged in NGO user can logout from the system after completing his tasks. The active session will be killed. No user can utilize the system functionalities until he is logged into the system.
+
+
+\section{Usability}
+Gramvaani Soochna Sanchar can be used extensively by the NGO personnel and government officials to keep the rural people updated of the new schemes and announcements which can help them to develop in the society and break the limitations caused by the infrastructural, financial and social factors. The web portal acts as \emph{gateway} between the people who are equipped with the information i.e. \emph{NGO personnel and government officials} and the people who are capable of become a helping hand to circulate this information in the remote areas of the society i.e. the \emph{Human Access Points}.
+
+\section{Challenges and Suggestions}
+
+The following are some of the challenges identified in the smooth run of the process at the web portal. The ones listed below are primarily from the higher point of view in the hierarchical architecture. The complete system, in spite of best rigorous training, interest and efforts of the NGO personnel and government officials, their contribution might be unworthy in helping the community people.
+
+\begin {enumerate}
+\item\textbf{Inactive NGO users and government officials :} The users of the web portal must be active users to keep the community updated. Passive behavior can result in an unused system. Web portal users must be updated of all the new information launched by the government for the  benefit of the rural people. Users must use the web portal to circulate information as early as possible so that community people can take maximum benefit out of the information.   
+\item\textbf{Keep track of the Human Access Points :} The web portal users must keep track of the HAPs. The system must be updated on removal and addition of an HAP. Otherwise the information will be passed to an HAP who does not even exist.
+\item\textbf{Information update of Human Access Points :} The information details of the HAPs must be latest and updated. An HAP with obsolete details in the web portal database is of no help to the system.
+\item\textbf{Feedback of the volunteers work :} The web portal users must be regularly updated of the feedback of the volunteers work by the community people. This helps in keeping the HAPs accountable to the responsibilities assigned to them. 
+\item\textbf{Survey Feedback Reports :} Survey responses shown at the web portal must be regularly updated after responses submitted by community people. It would help the system to improve by finding the bottlenecks and rectifying them by launching new schemes. 
+\item\textbf{Latency :} Latency is introduced into the system due to its hierarchical architecture. Information launched by the web portal users might be delayed due to some unavoidable reasons. This delay due to internet connectivity issues can increase when the information reaches the HAP which further takes time to launch the information in the community.
+\end {enumerate}
+
+
+
+

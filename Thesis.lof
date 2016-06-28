@@ -1,0 +1,75 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Advantages of Decentralization of Governance \relax }}{4}{figure.1.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Flow\relax }}{18}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Use Case Diagram of Application User\relax }}{19}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Entity Relationship diagram\relax }}{20}{figure.3.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Application Flow Diagram 1\relax }}{23}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Application Flow Diagram 2\relax }}{23}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Application Flow Diagram 3\relax }}{24}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram of User Login \relax }}{25}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram of PIN Recovery\relax }}{26}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sequence Diagram of Broadcasting Announcements \relax }}{27}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sequence Diagram of Getting Active Surveys\relax }}{28}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Sequence Diagram of Viewing Active Surveys\relax }}{29}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Sequence Diagram of Launching Active Surveys\relax }}{30}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sequence Diagram of Launching Message\relax }}{31}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Sequence Diagram of Adding a Group\relax }}{33}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Sequence Diagram of Creating New Contact\relax }}{35}{figure.4.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Web Portal Flow Diagram 1\relax }}{43}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Web Portal Flow Diagram 2\relax }}{44}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sequence diagram of SignUp on Web Portal\relax }}{45}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Sequence diagram of Login on Web Portal\relax }}{46}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequence diagram to Register admin on Web Portal\relax }}{47}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequence diagram to Launch Survey from Web Portal\relax }}{48}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sequence diagram to Vew Active Surveys on Web Portal\relax }}{49}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Sequence diagram to view questions of a survey on Web Portal\relax }}{50}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Sequence diagram to view survey responses on Web Portal\relax }}{51}{figure.5.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces GCM System Architecture\relax }}{55}{figure.6.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Pin Authentication\relax }}{63}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Message for Pin Authentication\relax }}{64}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Pin Recovery\relax }}{64}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Use Cases\relax }}{65}{figure.A.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Record Audio\relax }}{65}{figure.A.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Type of Text Announcements\relax }}{66}{figure.A.6}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Announcement of Surveys\relax }}{66}{figure.A.7}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Announcement of Camps\relax }}{67}{figure.A.8}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Announcement of Govt. Schemes\relax }}{67}{figure.A.9}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Add a New Contact\relax }}{68}{figure.A.10}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Confirmation Screen while Adding Contact\relax }}{68}{figure.A.11}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Add a New Contact Group\relax }}{69}{figure.A.12}
+\contentsline {figure}{\numberline {A.13}{\ignorespaces List of Active Surveys\relax }}{69}{figure.A.13}
+\contentsline {figure}{\numberline {A.14}{\ignorespaces View a Particular Survey\relax }}{70}{figure.A.14}
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Choose Contact Options to Launch\relax }}{70}{figure.A.15}
+\contentsline {figure}{\numberline {A.16}{\ignorespaces GV Contact Groups\relax }}{71}{figure.A.16}
+\contentsline {figure}{\numberline {A.17}{\ignorespaces Phone Contacts\relax }}{71}{figure.A.17}
+\contentsline {figure}{\numberline {A.18}{\ignorespaces Options on Menu Bar\relax }}{72}{figure.A.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Register new NGO user on the Web Portal\relax }}{73}{figure.B.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Home Page After Login on the Web Portal\relax }}{73}{figure.B.2}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Contact Gramvaani Page on the Web Portal\relax }}{74}{figure.B.3}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Launch Survey Step 1 on the Web Portal\relax }}{74}{figure.B.4}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Launch Survey Step 2 on the Web Portal\relax }}{75}{figure.B.5}
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Launch Survey Step 3 on the Web Portal\relax }}{75}{figure.B.6}
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Listen Question Audio Prompt on the Web Portal\relax }}{76}{figure.B.7}
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Login into the Web Portal\relax }}{76}{figure.B.8}
+\contentsline {figure}{\numberline {B.9}{\ignorespaces View Logged in User Profile on the Web Portal \relax }}{77}{figure.B.9}
+\contentsline {figure}{\numberline {B.10}{\ignorespaces Homepage part 1 on the Web Portal\relax }}{77}{figure.B.10}
+\contentsline {figure}{\numberline {B.11}{\ignorespaces Homepage part 2 on the Web Portal\relax }}{78}{figure.B.11}
+\contentsline {figure}{\numberline {B.12}{\ignorespaces Homepage part 3 on the Web Portal\relax }}{78}{figure.B.12}
+\contentsline {figure}{\numberline {B.13}{\ignorespaces Register new admin step 1 on the web portal\relax }}{79}{figure.B.13}
+\contentsline {figure}{\numberline {B.14}{\ignorespaces Register new admin step 2 on the web portal\relax }}{79}{figure.B.14}
+\contentsline {figure}{\numberline {B.15}{\ignorespaces View Survey Responses on the Web Portal\relax }}{80}{figure.B.15}
+\contentsline {figure}{\numberline {B.16}{\ignorespaces View Survey Questions on the Web Portal\relax }}{80}{figure.B.16}
+\contentsline {figure}{\numberline {B.17}{\ignorespaces View Surveys on the Web Portal\relax }}{81}{figure.B.17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces GramVaani Web Instance Surveys\relax }}{82}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Mobile Vaani Items\relax }}{82}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Published items on GramVaani Web Instance\relax }}{83}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces GramVaani Contact Groups along with Contacts\relax }}{83}{figure.C.4}

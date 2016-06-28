@@ -1,0 +1,57 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Objective}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Motivation}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Brief Description}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Literature Review and Related Work}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Landscaping Study}{}% 6
+\BOOKMARK [1][-]{section.2.1}{On Ground Surveys}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Visit to NGOs}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Observations and Suggestions}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Conclusions}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{System Architecture}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Platform and Technologies Used}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{Application Server}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{Android Application}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{System Flow}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Use Case Diagram}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.4}{Entity Relationship Diagram}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.5}{Information flow}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Local Governance Application}{}% 19
+\BOOKMARK [1][-]{section.4.1}{What is Gologo?}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Application Flow}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Functionalities}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Extra Features}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.5}{Usability}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.6}{Challenges and Suggestions}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{NGO's Web Portal}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Technical Specifications}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Web Portal Event Flow}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{Functionalities}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.3.1}{Sign Up}{section.5.3}% 30
+\BOOKMARK [2][-]{subsection.5.3.2}{Login}{section.5.3}% 31
+\BOOKMARK [2][-]{subsection.5.3.3}{Register New Admin}{section.5.3}% 32
+\BOOKMARK [2][-]{subsection.5.3.4}{Launch Survey}{section.5.3}% 33
+\BOOKMARK [2][-]{subsection.5.3.5}{View Active Surveys}{section.5.3}% 34
+\BOOKMARK [2][-]{subsection.5.3.6}{View Survey Questions}{section.5.3}% 35
+\BOOKMARK [2][-]{subsection.5.3.7}{View Survey Responses}{section.5.3}% 36
+\BOOKMARK [2][-]{subsection.5.3.8}{Profile}{section.5.3}% 37
+\BOOKMARK [2][-]{subsection.5.3.9}{Profile Settings}{section.5.3}% 38
+\BOOKMARK [2][-]{subsection.5.3.10}{Logout}{section.5.3}% 39
+\BOOKMARK [1][-]{section.5.4}{Usability}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.5}{Challenges and Suggestions}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Google Cloud Messaging}{}% 42
+\BOOKMARK [1][-]{section.6.1}{What is GCM?}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.2}{Characteristics of GCM}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.3}{GCM System Architecture}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.4}{Key Concepts of GCM}{chapter.6}% 46
+\BOOKMARK [2][-]{subsection.6.4.1}{GCM Components}{section.6.4}% 47
+\BOOKMARK [2][-]{subsection.6.4.2}{GCM Credentials}{section.6.4}% 48
+\BOOKMARK [1][-]{section.6.5}{Life Cycle Flow}{chapter.6}% 49
+\BOOKMARK [0][-]{chapter.7}{Epilogue}{}% 50
+\BOOKMARK [1][-]{section.7.1}{Challenges}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.2}{Conclusions}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.3}{Future Work}{chapter.7}% 53
+\BOOKMARK [0][-]{chapter*.3}{Bibliography}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Screenshots of the 'Gologo' Application}{}% 55
+\BOOKMARK [0][-]{appendix.B}{Screenshots of the Web Portal}{}% 56
+\BOOKMARK [0][-]{appendix.C}{Screenshots of Gramvaani GUI}{}% 57
